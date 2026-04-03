@@ -23,7 +23,7 @@ The app is deployed to Cloud Foundry, where it runs and can be accessed through 
    npm start  
 
 4. Login to Cloud Foundry:  
-   cf login  
+   cf login -a https://api.cf.us10-001.hana.ondemand.com -u <ahmedelgendy472@gmail.com> -o <9a58d515trial> -s <dev> 
 
 5. Build the project:  
    mbt build  
