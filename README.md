@@ -1,43 +1,60 @@
-## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Wed Apr 01 2026 00:22:03 GMT+0000 (Coordinated Universal Time)|
-|**App Generator**<br>SAP Fiori Application Generator|
-|**App Generator Version**<br>1.22.0|
-|**Generation Platform**<br>SAP Business Application Studio|
-|**Template Used**<br>List Report Page V2|
-|**Service Type**<br>OData URL|
-|**Service URL**<br>https://services.odata.org/V2/Northwind/Northwind.svc/|
-|**Module Name**<br>project1|
-|**Application Title**<br>first|
-|**Namespace**<br>com.intern.northwind.productapp|
-|**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.146.0|
-|**Enable TypeScript**<br>False|
-|**Add Eslint configuration**<br>True, see https://www.npmjs.com/package/@sap-ux/eslint-plugin-fiori-tools#rules for the eslint rules.|
-|**Main Entity**<br>Products|
-|**Navigation Entity**<br>Category|
+# Northwind Products Fiori Application  
 
-## project1
+## Description  
+This is an SAP Fiori List Report application built using SAP Business Application Studio.  
+It displays product data from the Northwind OData service and allows users to explore product details.  
 
-An SAP Fiori application.
+---
 
-### Starting the generated app
+## Architecture Overview  
+The application is developed in SAP Business Application Studio (BAS).  
+A destination in SAP BTP is used to connect securely to the Northwind OData service.  
+The app is deployed to Cloud Foundry, where it runs and can be accessed عبر public URL.  
 
--   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  To launch the generated application, run the following from the generated application root folder:
+---
 
-```
-    npm start
-```
+## Setup Instructions  
 
-- It is also possible to run the application using mock data that reflects the OData Service URL supplied during application generation.  In order to run the application with Mock Data, run the following from the generated app root folder:
+1. Clone the repository  
+2. Install dependencies:  
+   npm install  
 
-```
-    npm run start-mock
-```
+3. Run the app:  
+   npm start  
 
-#### Pre-requisites:
+4. Login to Cloud Foundry:  
+   cf login  
 
-1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
+5. Build the project:  
+   mbt build  
 
+6. Deploy:  
+   cf deploy mta_archives/project1.mtar  
 
+---
+
+## OData Entity Used  
+The selected entity is **Products**.  
+It was chosen because it contains useful business data like product name, price, and category.  
+
+---
+
+## Challenges Faced  
+I faced a Git push rejection error بسبب اختلاف بين local و GitHub.  
+I solved it using:  
+git pull origin master --rebase  
+then pushed successfully.  
+
+---
+
+## Bonus Tasks Completed  
+- Deployed the application to Cloud Foundry    
+
+---
+
+## Deployed Application URL  
+(https://9a58d515trial-dev-northwind-app.cfapps.us10-001.hana.ondemand.com)  
+
+---
+
+## Screenshots  
