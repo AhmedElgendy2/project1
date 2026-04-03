@@ -14,21 +14,20 @@ The app is deployed to Cloud Foundry, where it runs and can be accessed through 
 ---
 
 ## Setup Instructions  
-
-1. Clone the repository  
-2. Install dependencies:  
+ 
+1. Install dependencies:  
    npm install  
 
-3. Run the app:  
+2. Run the app:  
    npm start  
 
-4. Login to Cloud Foundry:  
+3. Login to Cloud Foundry:  
    cf login -a https://api.cf.us10-001.hana.ondemand.com -u <ahmedelgendy472@gmail.com> -o <9a58d515trial> -s <dev> 
 
-5. Build the project:  
+4. Build the project:  
    mbt build  
 
-6. Deploy:  
+5. Deploy:  
    cf deploy mta_archives/project1.mtar  
 
 ---
