@@ -54,10 +54,3 @@ I also encountered an issue with the Build Work Zone. After downloading it, ther
 
 ## Deployed Application URL  
 (https://9a58d515trial-dev-northwind-app.cfapps.us10-001.hana.ondemand.com)  
-
----
-<<<<<<< HEAD
-
-## Screenshots  
-=======
->>>>>>> ae0de18 (update README as required)
